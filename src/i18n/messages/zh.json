@@ -1,0 +1,246 @@
+{
+  "navigation": {
+    "home": "首页",
+    "pets": "宠物领养",
+    "shop": "宠物商城",
+    "services": "宠物服务",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "faq": "常见问题"
+  },
+  "hero": {
+    "title": "寻找您的完美伴侣",
+    "subtitle": "我们将充满爱心的家庭与可爱的宠物联系在一起。领养、购物、照顾您的毛茸茸朋友，一站式解决。",
+    "cta": {
+      "adopt": "领养宠物",
+      "shop": "立即购物"
+    }
+  },
+  "pets": {
+    "title": "可领养宠物",
+    "subtitle": "从我们等待永远家庭的可爱宠物中找到您的新朋友。",
+    "filter": {
+      "all": "全部",
+      "dogs": "狗狗",
+      "cats": "猫咪",
+      "birds": "鸟类",
+      "rabbits": "兔子",
+      "hamsters": "仓鼠",
+      "search": "搜索宠物...",
+      "age": "年龄",
+      "size": "体型",
+      "small": "小型",
+      "medium": "中型",
+      "large": "大型"
+    },
+    "card": {
+      "adopt": "领养我",
+      "viewDetails": "查看详情",
+      "months": "个月大",
+      "vaccinated": "已接种疫苗",
+      "neutered": "已绝育",
+      "available": "可领养",
+      "small": "小型",
+      "medium": "中型",
+      "large": "大型",
+      "food": "食品",
+      "toys": "玩具",
+      "accessories": "配件",
+      "health": "保健品",
+      "grooming": "美容用品"
+    },
+    "detail": {
+      "about": "关于",
+      "personality": "性格特点",
+      "health": "健康信息",
+      "adoptButton": "申请领养",
+      "backToList": "返回宠物列表"
+    },
+    "adoption": {
+      "title": "领养申请",
+      "subtitle": "填写以下表格申请领养",
+      "form": {
+        "name": "姓名",
+        "email": "电子邮箱",
+        "phone": "电话号码",
+        "address": "家庭住址",
+        "petExperience": "养宠经验",
+        "reason": "您为什么想领养这只宠物？",
+        "submit": "提交申请",
+        "success": "您的申请已成功提交！我们会尽快与您联系。"
+      }
+    }
+  },
+  "shop": {
+    "title": "宠物商城",
+    "subtitle": "为您心爱的宠物提供优质产品",
+    "categories": {
+      "all": "全部商品",
+      "food": "食品",
+      "toys": "玩具",
+      "accessories": "配件",
+      "health": "保健品",
+      "grooming": "美容用品"
+    },
+    "card": {
+      "addToCart": "加入购物车",
+      "outOfStock": "缺货",
+      "reviews": "条评价",
+      "off": "折"
+    },
+    "detail": {
+      "addToCart": "加入购物车",
+      "inStock": "有货",
+      "outOfStock": "缺货",
+      "reviews": "用户评价",
+      "description": "商品描述",
+      "backToShop": "返回商城"
+    },
+    "cart": {
+      "title": "购物车",
+      "empty": "您的购物车是空的",
+      "continueShopping": "继续购物",
+      "item": "商品",
+      "price": "价格",
+      "quantity": "数量",
+      "total": "小计",
+      "subtotal": "总计",
+      "checkout": "去结算",
+      "remove": "移除"
+    },
+    "checkout": {
+      "title": "结算",
+      "shipping": "收货信息",
+      "payment": "支付方式",
+      "orderSummary": "订单摘要",
+      "subtotal": "总计",
+      "form": {
+        "firstName": "名",
+        "lastName": "姓",
+        "email": "电子邮箱",
+        "phone": "电话",
+        "address": "地址",
+        "city": "城市",
+        "zipCode": "邮编",
+        "credit": "信用卡",
+        "debit": "借记卡",
+        "cash": "货到付款"
+      },
+      "placeOrder": "提交订单",
+      "success": "订单提交成功！"
+    }
+  },
+  "services": {
+    "title": "宠物服务",
+    "subtitle": "为您的毛茸茸朋友提供专业护理",
+    "categories": {
+      "all": "全部服务",
+      "grooming": "美容护理",
+      "boarding": "寄养服务",
+      "veterinary": "医疗服务",
+      "training": "培训服务"
+    },
+    "card": {
+      "book": "立即预约",
+      "minutes": "分钟",
+      "features": "服务内容"
+    },
+    "detail": {
+      "bookButton": "预约服务",
+      "duration": "服务时长",
+      "backToServices": "返回服务列表"
+    },
+    "booking": {
+      "title": "预约服务",
+      "form": {
+        "name": "您的姓名",
+        "email": "电子邮箱",
+        "phone": "电话号码",
+        "petName": "宠物名称",
+        "petType": "宠物类型",
+        "date": "预约日期",
+        "time": "预约时间",
+        "notes": "备注信息",
+        "submit": "确认预约",
+        "success": "预约成功！我们会尽快与您联系。"
+      }
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "您值得信赖的宠物护理伙伴，始于2010年",
+    "story": {
+      "title": "我们的故事",
+      "content": "爪爪爱宠物店成立于2010年，使命很简单：帮助宠物找到温暖的家，提供最优质的护理产品和服务。多年来，我们已经帮助数千只宠物找到了永远的家庭，成为宠物护理领域的值得信赖的品牌。"
+    },
+    "mission": {
+      "title": "我们的使命",
+      "content": "我们相信每只宠物都值得被爱、被照顾、有一个安全的家。我们的使命是将宠物与充满爱心的家庭联系起来，同时提供优质的产品和服务，让它们健康快乐。"
+    },
+    "values": {
+      "title": "我们的价值观",
+      "compassion": "关爱",
+      "compassionDesc": "我们用爱和关怀对待每一只宠物",
+      "quality": "品质",
+      "qualityDesc": "我们只提供最好的产品和服务",
+      "trust": "信任",
+      "trustDesc": "我们与客户建立持久的关系",
+      "community": "社区",
+      "communityDesc": "我们支持本地动物福利倡议"
+    },
+    "team": {
+      "title": "认识我们的团队",
+      "subtitle": "充满激情的宠物爱好者，致力于您宠物的健康幸福"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们很乐意听取您的意见",
+    "info": {
+      "address": "动物城市宠物街123号，邮编12345",
+      "phone": "+86 123-4567-8900",
+      "email": "hello@pawsandlove.com",
+      "hours": "周一至周六：上午9:00 - 晚上7:00"
+    },
+    "form": {
+      "name": "您的姓名",
+      "email": "电子邮箱",
+      "phone": "电话号码",
+      "subject": "主题",
+      "message": "您的留言",
+      "submit": "发送消息",
+      "success": "消息发送成功！我们会尽快回复您。"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "找到关于我们服务的常见问题答案",
+    "questions": {
+      "q1": "领养流程是怎样的？",
+      "a1": "我们的领养流程包括填写申请表、与宠物见面和家访。整个过程通常需要3-5天。",
+      "q2": "你们提供产品配送吗？",
+      "a2": "是的，我们在市内为超过50元的订单提供免费配送。标准配送需要2-3个工作日。",
+      "q3": "你们提供哪些服务？",
+      "a3": "我们提供美容护理、寄养、医疗检查和培训服务。所有服务均由持证专业人员提供。",
+      "q4": "产品可以退换吗？",
+      "a4": "是的，未使用的产品可以在14天内凭原包装退换。食品类商品一经开封不可退换。",
+      "q5": "需要提前预约服务吗？",
+      "a5": "我们建议至少提前24小时预约，特别是美容和寄养服务。当天预约可能也有空位。",
+      "q6": "接受哪些支付方式？",
+      "a6": "我们接受信用卡、借记卡、现金和移动支付。在线订单接受所有主要信用卡。"
+    }
+  },
+  "footer": {
+    "description": "您值得信赖的宠物护理伙伴，始于2010年。帮助宠物找到温暖的家，让它们健康快乐。",
+    "quickLinks": "快速链接",
+    "contactInfo": "联系方式",
+    "followUs": "关注我们",
+    "copyright": "© 2024 爪爪爱宠物店。保留所有权利。"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "出错了",
+    "language": "语言",
+    "currency": "¥"
+  }
+}
