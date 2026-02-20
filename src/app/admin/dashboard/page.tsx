@@ -65,13 +65,11 @@ export default function AdminDashboard() {
   const [error, setError] = useState('');
 
   useEffect(() => {
+    // 只获取数据，认证由 layout 处理
     const token = localStorage.getItem('adminToken');
-    if (!token) {
-      router.push('/admin/login');
-      return;
+    if (token) {
+      fetchStats(token);
     }
-
-    fetchStats(token);
   }, [router]);
 
   const fetchStats = async (token: string) => {

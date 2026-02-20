@@ -37,12 +37,23 @@ export default function AdminLayout({
   const pathname = usePathname();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
 
   useEffect(() => {
+    // 只在客户端运行
     setMounted(true);
+    
+    // 检查是否是登录页面
+    if (pathname === '/admin/login') {
+      return;
+    }
+    
+    // 检查token
     const token = localStorage.getItem('adminToken');
-    if (!token && pathname !== '/admin/login') {
+    if (token) {
+      setIsAuthenticated(true);
+    } else {
       router.push('/admin/login');
     }
   }, [router, pathname]);
@@ -52,12 +63,27 @@ export default function AdminLayout({
     router.push('/admin/login');
   };
 
+  // 加载中状态
   if (!mounted) {
-    return null;
+    return (
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+        <div className="w-12 h-12 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin"></div>
+      </div>
+    );
   }
 
+  // 登录页面不需要验证
   if (pathname === '/admin/login') {
     return children;
+  }
+
+  // 未认证时显示加载
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+        <div className="w-12 h-12 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin"></div>
+      </div>
+    );
   }
 
   return (

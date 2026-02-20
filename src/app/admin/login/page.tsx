@@ -27,13 +27,14 @@ export default function AdminLoginPage() {
 
       if (response.ok && data.success) {
         localStorage.setItem('adminToken', data.token);
-        router.push('/admin/dashboard');
+        // 使用 window.location 进行完整页面刷新，确保 token 正确加载
+        window.location.href = '/admin/dashboard';
       } else {
         setError(data.error || '登录失败');
+        setLoading(false);
       }
     } catch {
       setError('网络错误，请重试');
-    } finally {
       setLoading(false);
     }
   };
