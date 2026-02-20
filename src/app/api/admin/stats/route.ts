@@ -54,7 +54,7 @@ export async function GET(request: NextRequest) {
       supabase.from('orders').select('id', { count: 'exact', head: true }).eq('status', 'pending'),
       supabase.from('bookings').select('id', { count: 'exact', head: true }).eq('status', 'pending'),
       supabase.from('orders').select('id, order_number, total_amount, status, created_at, users(name, email)').order('created_at', { ascending: false }).limit(5),
-      supabase.from('bookings').select('id, pet_name, pet_type, date, time, status, users(name, email)').order('created_at', { ascending: false }).limit(5),
+      supabase.from('bookings').select('id, pet_name, pet_type, booking_date, booking_time, status, users(name, email)').order('created_at', { ascending: false }).limit(5),
     ]);
 
     const totalRevenue = ordersSum.data?.reduce((sum: number, order: { total_amount: number }) => sum + order.total_amount, 0) || 0;

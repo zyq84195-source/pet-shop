@@ -32,8 +32,8 @@ interface Stats {
     id: string;
     pet_name: string;
     pet_type: string;
-    date: string;
-    time: string;
+    booking_date: string;
+    booking_time: string;
     status: string;
     users: { name: string; email: string } | null;
   }>;
@@ -270,7 +270,7 @@ export default function AdminDashboard() {
                     <div>
                       <p className="font-medium">{booking.pet_name} ({booking.pet_type})</p>
                       <p className="text-sm text-gray-500">
-                        {booking.users?.name || '未知用户'} · {booking.date} {booking.time}
+                        {booking.users?.name || '未知用户'} · {booking.booking_date} {booking.booking_time}
                       </p>
                     </div>
                     <span className={`inline-block px-2 py-1 rounded text-xs ${statusColors[booking.status]}`}>

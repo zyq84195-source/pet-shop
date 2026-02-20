@@ -8,8 +8,8 @@ interface Booking {
   id: string;
   pet_name: string;
   pet_type: string;
-  date: string;
-  time: string;
+  booking_date: string;
+  booking_time: string;
   notes: string | null;
   status: string;
   created_at: string;
@@ -176,7 +176,7 @@ export default function AdminBookingsPage() {
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2 text-gray-600">
                   <Calendar className="w-4 h-4" />
-                  <span>{formatDate(booking.date)} {booking.time}</span>
+                  <span>{formatDate(booking.booking_date)} {booking.booking_time}</span>
                 </div>
                 <div className="text-gray-600">
                   <span className="text-gray-400">服务：</span>

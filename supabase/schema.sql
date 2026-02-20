@@ -99,8 +99,8 @@ CREATE TABLE IF NOT EXISTS bookings (
   service_id UUID REFERENCES services(id) ON DELETE SET NULL,
   pet_name VARCHAR(255) NOT NULL,
   pet_type VARCHAR(100) NOT NULL,
-  date DATE NOT NULL,
-  time VARCHAR(20) NOT NULL,
+  booking_date DATE NOT NULL,
+  booking_time VARCHAR(20) NOT NULL,
   notes TEXT,
   status VARCHAR(20) DEFAULT 'pending' CHECK (status IN ('pending', 'confirmed', 'completed', 'cancelled')),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
@@ -138,7 +138,7 @@ CREATE INDEX IF NOT EXISTS idx_orders_user_id ON orders(user_id);
 CREATE INDEX IF NOT EXISTS idx_orders_status ON orders(status);
 CREATE INDEX IF NOT EXISTS idx_orders_created_at ON orders(created_at);
 CREATE INDEX IF NOT EXISTS idx_bookings_user_id ON bookings(user_id);
-CREATE INDEX IF NOT EXISTS idx_bookings_date ON bookings(date);
+CREATE INDEX IF NOT EXISTS idx_bookings_date ON bookings(booking_date);
 CREATE INDEX IF NOT EXISTS idx_bookings_status ON bookings(status);
 CREATE INDEX IF NOT EXISTS idx_adoptions_user_id ON adoptions(user_id);
 CREATE INDEX IF NOT EXISTS idx_adoptions_pet_id ON adoptions(pet_id);

@@ -32,7 +32,7 @@ export async function GET(request: NextRequest) {
     let query = supabase
       .from('bookings')
       .select('*, users(name, email), services(name, name_zh)')
-      .order('date', { ascending: true });
+      .order('booking_date', { ascending: true });
     
     if (status && status !== 'all') {
       query = query.eq('status', status);

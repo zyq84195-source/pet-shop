@@ -143,11 +143,11 @@ export async function createBooking(bookingData: {
       service_id: bookingData.serviceId,
       pet_name: bookingData.petName,
       pet_type: bookingData.petType,
-      date: bookingData.date,
-      time: bookingData.time,
+      booking_date: bookingData.date,
+      booking_time: bookingData.time,
       notes: bookingData.notes,
       status: 'pending',
-    })
+    } as never)
     .select()
     .single();
   if (error) {
@@ -163,7 +163,7 @@ export async function getBookings(userId?: string) {
   if (userId) {
     query = query.eq('user_id', userId);
   }
-  const { data, error } = await query.order('date', { ascending: true });
+  const { data, error } = await query.order('booking_date', { ascending: true });
   if (error) {
     console.error('Error fetching bookings:', error);
     return [];
