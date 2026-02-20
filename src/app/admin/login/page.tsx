@@ -117,9 +117,12 @@ export default function AdminLoginPage() {
           </form>
 
           <div className="mt-8 pt-6 border-t border-white/10">
-            <p className="text-white/40 text-xs text-center">
-              默认密码：<span className="text-white/60 font-mono">petshop2024</span>
+            <p className="text-white/40 text-xs text-center mb-2">
+              可用密码：
             </p>
+            <div className="flex flex-col gap-1 text-center">
+              <code className="text-white/60 text-sm bg-white/5 px-3 py-1 rounded-lg">petshop2024</code>
+            </div>
           </div>
         </div>
 
